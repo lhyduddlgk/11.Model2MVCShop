@@ -29,7 +29,24 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
 	
 	<!--  ///////////////////////// CSS ////////////////////////// -->
-	<style></style>
+	<style>
+		/* navbar */
+		.navbar-default {
+    		background-color: #FEF9E6;
+    		border-color: #E7E7E7;
+		}navbar-brand
+		
+		.navbar-brand-default {
+    		background-color: #FEF9E6;
+    		border-color: #E7E7E7;
+		}
+		.navbar-header-default{
+    		background-color: #FEF9E6;
+    		border-color: #E7E7E7;
+		}
+		
+	
+	</style>
    	
    	<!--  ///////////////////////// JavaScript ////////////////////////// -->
 	<script type="text/javascript">
@@ -64,7 +81,7 @@
         	<a class="navbar-brand" href="#">Model2 MVC Shop</a>
 			
 			<!-- toolBar Button Start //////////////////////// -->
-			<div class="navbar-header">
+			<div class="navbar-header">				
 			    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#target">
 			        <span class="sr-only">Toggle navigation</span>
 			        <span class="icon-bar"></span>
@@ -97,15 +114,15 @@
 		       	<!--  회원관리 목록에 제목 -->
 				<div class="panel panel-primary">
 					<div class="panel-heading">
-						<i class="glyphicon glyphicon-heart"></i> 회원관리
+						<i class="glyphicon glyphicon-user"></i> 회원관리
          			</div>
          			<!--  회원관리 아이템 -->
 					<ul class="list-group">
 						 <li class="list-group-item">
-						 	<a href="#">개인정보조회</a> <i class="glyphicon glyphicon-ban-circle"></i>
+						 	<a href="#">개인정보조회</a> <!-- <i class="glyphicon glyphicon-ban-circle"></i> -->
 						 </li>
 						 <li class="list-group-item">
-						 	<a href="#">회원정보조회</a> <i class="glyphicon glyphicon-ban-circle"></i>
+						 	<a href="#">회원정보조회</a> <!-- <i class="glyphicon glyphicon-ban-circle"></i> -->
 						 </li>
 					</ul>
 		        </div>
@@ -117,10 +134,10 @@
          			</div>
 					<ul class="list-group">
 						 <li class="list-group-item">
-						 	<a href="#">판매상품등록</a> <i class="glyphicon glyphicon-ban-circle"></i>
+						 	<a href="#">판매상품등록</a> <!-- <i class="glyphicon glyphicon-ban-circle"></i> -->
 						 </li>
 						 <li class="list-group-item">
-						 	<a href="#">판매상품관리</a> <i class="glyphicon glyphicon-ban-circle"></i>
+						 	<a href="#">판매상품관리</a> <!-- <i class="glyphicon glyphicon-ban-circle"></i> -->
 						 </li>
 					</ul>
 		        </div>
@@ -133,10 +150,10 @@
 					<ul class="list-group">
 						 <li class="list-group-item"><a href="#">상품검색</a></li>
 						  <li class="list-group-item">
-						  	<a href="#">구매이력조회</a> <i class="glyphicon glyphicon-ban-circle"></i>
+						  	<a href="#">구매이력조회</a> <!-- <i class="glyphicon glyphicon-ban-circle"></i> -->
 						  </li>
 						 <li class="list-group-item">
-						 	<a href="#">최근본상품</a> <i class="glyphicon glyphicon-ban-circle"></i>
+						 	<a href="#">최근본상품</a> <!-- <i class="glyphicon glyphicon-ban-circle"></i> -->
 						 </li>
 					</ul>
 				</div>
