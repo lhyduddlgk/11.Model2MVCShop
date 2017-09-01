@@ -33,7 +33,18 @@
 <style>
 body {
 	padding-top: 70px;
-	background-color: #FEF9E6;
+	background-color: #ffffff;
+}
+.xans-element-xans-bannermanage2-xans-bannermanage2-display {
+	display: none;
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    padding: 10px 30px;
+    color: white;
+    background: black;
+    bottom: 0;
+    text-align: center;
 }
 </style>
 
@@ -69,18 +80,17 @@ body {
 				<div class="carousel-inner" role="listbox">
 
 					<div class="item active">
-						<img src="./images/uploadFiles/attachImage_3258139041.jpg"
+						<img src="./images/uploadFiles/attachImage3258139041.jpg"
 							width="1140" height="500" alt="First slide">
 					</div>
 
 					<div class="item">
-						<img src="./images/uploadFiles/attachImage_3258139042.jpg"
+						<img src="./images/uploadFiles/attachImage3258139042.jpg"
 							width="1140" height="500" alt="Second slide">
 					</div>
 
 					<div class="item">
-						<img
-							src="./images/uploadFiles/tumblr_o0hpml3tpX1u1u3flo1_1280.jpg"
+						<img src="./images/uploadFiles/tumblro0hpml3tpX1u1u3flo11280.jpg"
 							width="1140" height="500" alt="Third slide">
 					</div>
 				</div>
@@ -97,29 +107,29 @@ body {
 			</div>
 		</div>
 
-		<!-- <div class="jumbotron">
-        <h1>Model2MVCShop </h1>
-        <p>J2SE , DBMS ,JDBC , Servlet & JSP, Java Framework , HTML5 , UI Framework 학습 후 Mini-Project 진행</p>
-     </div>
-    </div> -->
-
-		<!-- 참조 : http://getbootstrap.com/css/   : container part..... -->
-		<!-- <div class="container">
-			<h3>나폴레옹은 이렇게 말했다.</h3>
-			<p>"오늘 나의 불행은 언젠가 내가 잘못 보낸 시간의 보복이다."</p>
-			<h3>"... 장벽은 절실하게 원하지 않는 사람들을 걸러내려고 존재합니다. 장벽은. 당신이 아니라 '다른'
-				사람들을 멈추게 하려고 거기 있는 것이지요."</h3>
-			<h3>혜광스님</h3>
-			<p>행복한 삶의 비결은.</p>
-			<p>좋아하는 일을 하는 것이 아리라,</p>
-			<p>지금 하는 일을 좋아하는 것입니다.</p>
-		</div> -->
-		<p> </p>
-		<p> </p>
-		<p> </p>
-		<p> </p>
-		
-		
+		<span class="xans-element- xans-bannermanage2 xans-bannermanage2-display">
+			<span class="xans-record-">
+				<a	href="http://192.168.0.37:8080/product/getProduct?prodNo=10000&menu=search"
+					alt="4"><img class='banner_image' width='150' height='200'
+					title='컴퓨터' alt='4' rel='4-1'
+					src='./images/uploadFiles/AHlbAAAAtBqyWAAA.jpg' /></a>
+			</span>
+			</span>
+			
+			<span class="xans-element- xans-bannermanage2 xans-bannermanage2-display">
+			<span class="xans-record-">
+				<a	href="http://192.168.0.37:8080/product/getProduct?prodNo=10001&menu=search"
+					alt="4"><img class='banner_image' width='150' height='200'
+					title='자전거' alt='4' rel='4-1'
+					src='./images/uploadFiles/AHlbAAAAvetFNwAA.jpg' /></a>
+			</span>
+			</span>
+			<span class="xans-record-">
+				<a	href="http://192.168.0.37:8080/product/getProduct?prodNo=10002&menu=search"
+					alt="4"><img class='banner_image' width='150' height='200'
+					title='보르도' alt='4' rel='4-1'
+					src='./images/uploadFiles/AHlbAAAAvewfegAB.jpg' /></a>
+			</span>
 </body>
 
 </html>

@@ -140,7 +140,7 @@
 		 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 		 
-		//==>"ID중복확인" Event 처리 및 연결
+		/* //==>"ID중복확인" Event 처리 및 연결
 		 $(function() {
 			//==> DOM Object GET 3가지 방법 ==> 1. $(tagName) : 2.(#id) : 3.$(.className)
 			 $("button.btn.btn-info").on("click" , function() {
@@ -150,7 +150,49 @@
 											"left=300,top=200,width=780,height=130,marginwidth=0,marginheight=0,"+
 											"scrollbars=no,scrolling=no,menubar=no,resizable=no");
 			});
-		});	
+		});	 */
+		
+		$(function(){
+			$('input[name="userId"]').bind('keyup', function(){
+				var userId = $(this).val().trim();
+				
+				$.ajax({
+					//url 주소를 통해 가입된 ID인지 아닌지 판별함
+					url : 'json/checkDuplication/'+userId,
+					method : 'get',
+					dataType : 'json',
+					//data를 어떻게 보내는 지에 대한 logic
+					headers : {
+						'Accept' : 'application/json',
+						'Content-Type' : 'application/json'
+					},
+					success : function(JSONData , status){
+						if(JSONData){
+							
+							$('h3').html('사용 가능한 아이디 입니다.').css('color','blue');
+							check = true;
+						}else{
+							
+							$('h3').html('이미 존재하는 ID입니다.').css('color','red');
+							check = false;
+						}
+					}
+				});
+				if(userId == ''){
+					$('h3').html('');
+				}
+			});
+		});
+		
+		$(function(){
+			$('input[name="password2"]').bind('keyup',function(){
+				if( $($('input:password')[0]).val() != $($('input:password')[1]).val()){
+					$('span').text("비밀번호가 다릅니다.").css('color','red');
+				}else{
+					$('span').text("비밀번호가 일치합니다.").css('color','green');
+				}
+			});
+		});
 
 	</script>		
     
